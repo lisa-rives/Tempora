@@ -47,7 +47,7 @@ p#bienvenu {
     text-align: center;
     font-style: italic;
     font-size:  35px;
-    color: #CC0067;
+    color: white;
 }
 
 h2.titre-page {
@@ -83,3 +83,4 @@ hr {
     background-color: #E96399;
     border: none;
 }
+
