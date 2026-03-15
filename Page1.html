@@ -176,18 +176,18 @@
 			<div class="block">
 				<h2 class="intertitre">Les problèmes rencontrés, et les solutions envisagées</h2>
 				<ul>
-					<li><strong>Problème 1:</strong> la priorité est définie comme un enum Priority et non comme un entier,
+					<li><strong>Problème 1 :</strong> la priorité est définie comme un enum Priority et non comme un entier,
 						donc Rust ne peut pas comparer directement deux priorités pour effectuer le tri.
 						<strong>-> solution trouvée :</strong> convertir la valeur de Priority en valeur numérique à l’aide
 						d’une fonction (priority_value) afin de pouvoir comparer les priorités lors du tri des tâches.</li>
 					<br/>
-					<li><strong>Problème 2:</strong> la bibliotèque chrono n'était pas ajoutée au projet directement donc tout le monde n'y avait pas accès.
+					<li><strong>Problème 2 :</strong> la bibliothèque chrono n'était pas ajoutée au projet directement donc tout le monde n'y avait pas accès.
 						<strong>-> solution trouvée :</strong> ajouter chrono dans les dépendances.</li>
 					<br/>
-					<li><strong>Problème 3:</strong> ratatui ne fonctionne pas comme du HTML/CSS, il n'y a pas de positionnement automatique. Pour chaque widget il faut calculer les zones manuellement pour header / contenu / footer ce qui s'avère être fastidieux, surtout pour les popups centrés.
+					<li><strong>Problème 3 :</strong> ratatui ne fonctionne pas comme du HTML/CSS, il n'y a pas de positionnement automatique. Pour chaque widget il faut calculer les zones manuellement pour header / contenu / footer ce qui s'avère être fastidieux, surtout pour les popups centrés.
 						<strong>-> solution trouvée :</strong> pour les popups, écriture d'une fonction centered_rect() qui calcule dynamiquement la Rect centrée en fonction de la taille du terminal.</li>
 					<br/>
-					<li><strong>Problème 4:</strong> le design voulu reposait sur des tons rose/mauve, mais les terminaux ne supportent pas toutes les couleurs RGB, certaines nuances n'existent pas.
+					<li><strong>Problème 4 :</strong> le design voulu reposait sur des tons rose/mauve, mais les terminaux ne supportent pas toutes les couleurs RGB, certaines nuances n'existent pas.
 						<strong>-> solution trouvée :</strong> définition d'une palette de constantes (PINK, DEEP_PINK, SOFT, LAVENDER...)</li>
 				
 				</ul>
